@@ -1,0 +1,29 @@
+{
+  "name": "cordova-fibonacci-calculator-plugin",
+  "version": "1.0.0",
+  "description": "Fibonacci Calculator for Cordova iOS",
+  "cordova": {
+    "id": "phonegap-plugin-dbr",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jibrilg/cordova-fibonacci-calculator"
+  },
+  "keywords": [
+    "ecosystem:phonegap",
+    "cordova-ios",
+    "cordova:plugin"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Jibril Gueye",
+  "license": "MIT",
+  "homepage": "https://github.com/jibrilg/cordova-fibonacci-calculator"
+}

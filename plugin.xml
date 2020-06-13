@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+           id="cordova-fibonacci-calculator-plugin"
+      version="0.0.1">
+
+    <name>Fibonacci</name>
+    <description>Fibonacci calculator Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,fibonacci</keywords>
+    <repo>https://github.com/jibrilg/cordova-fibonacci-calculator-plugin</repo>
+    <issue>https://github.com/jibrilg/cordova-fibonacci-calculator-plugin/issues</issue>
+
+    <js-module src="www/fibonacciCalculator.js" name="fibonacciCalculator">
+      <!--
+        <clobbers target="navigator.fibonacci" />
+      -->
+        <clobbers target="cordova.plugins.fibonacciCalculator" />
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="FibonacciCalculator">
+                <param name="ios-package" value="FibonacciCalculator" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/FibonacciCalculator.h" />
+        <source-file src="src/ios/FibonacciCalculator.m" />
+    </platform>
+</plugin>
